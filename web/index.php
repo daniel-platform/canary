@@ -9,8 +9,8 @@ $messages = new Messages();
 $response = http_response_code();
 
 // Attempt read and write tests
-if(!$messages->write_file() || !$messages->read_file(){
-	http_response_code(500);
+if(!$messages->write_file() || !$messages->read_file()){
+    http_response_code(500);
 }
 
 printf("<h1>%s</h1>\n", $messages->title());
